@@ -1,0 +1,16 @@
+arnvid      2005/01/06 05:17:57 CET
+
+  Added files:
+    .                    .cvsignore Makefile.in configure 
+                         configure.in 
+  Log:
+  Added new build system with autoconf/configure/makefile creation scripts
+  
+  Revision  Changes    Path
+  1.1       +5 -0      nml2lst/.cvsignore (new)
+  1.1       +24 -0     nml2lst/Makefile.in (new)
+  1.1       +1476 -0   nml2lst/configure (new)
+  1.1       +22 -0     nml2lst/configure.in (new)
+
+
+
