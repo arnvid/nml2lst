@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<NML VERSION="5">
+  <HEAD COMPANY="www.native-instruments.com" PROGRAM="Traktor DJ"/>
+  <PLAYLIST TITLE="Traktor_tmpFile">
+    <ENTRY ARTIST="This Artist" AUDIO_ID="LAMEID" ID="418330" LOCK="1" TITLE="Song Title">
+      <LOCATION DIR="/location/to/file/" FILE="This Artoist - Song Title.mp3" MEDIA="REMOVEABLE" PATH="M:\something\this\that\" VOLUME="M:"/>
+      <ALBUM TITLE="some hard trance" TRACK="3"/>
+      <INFO BITRATE="192000" GENRE="Trance" IMPORT_DATE="2004/5/21" LAST_PLAYED="2004/5/29" PLAYCOUNT="2" PLAYTIME="387" RANKING="0" RELEASE_DATE="2003/1/1"/>
+      <TEMPO BPM="139.864975" BPM_QUALITY="88"/>
+      <LOUDNESS PEAK_DB=" 0.000000" PERCEIVED_DB=" 3.299466"/>
+    </ENTRY>
+  </PLAYLIST>
+</NML>
