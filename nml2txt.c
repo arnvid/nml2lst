@@ -1,9 +1,11 @@
 /* [isd] Insane Software Designers - arnvid@isd.no
  * ===============================================
- *
- * djtools - tools for traktor dj studio
- *
  * nml2txt.c - converts nml playlist files to txt
+ *
+ * Written for 
+ *      Native Instruments - Traktor DJ Studio
+ *
+ * $Id$
  *
  */
 
@@ -30,8 +32,11 @@ char buff[BUFFSIZE];
 static void start(void *data, const char *el, const char **attr)
 {
   int i;
-  char *artist=0;
-  char *title=0;
+  char *artist;
+  char *title;
+
+  artist = malloc(512);
+  title = malloc(512);
 
   if (strcmp(el, "PLAYLIST") == 0)
   {
@@ -50,11 +55,11 @@ static void start(void *data, const char *el, const char **attr)
     {
       if (strcmp(attr[i], "ARTIST") == 0)
       {
-        artist = attr[i + 1];
+        strncpy(artist, attr[i + 1], 500);
       }
       if (strcmp(attr[i], "TITLE") == 0)
       {
-        title = attr[i + 1];
+        strncpy(title, attr[i + 1], 500);
       }
     }
     if (songno < 10) 
@@ -66,6 +71,8 @@ static void start(void *data, const char *el, const char **attr)
       printf("%d: %s - %s\n", songno, artist, title);
     }
   }
+  if (title) free(title);
+  if (artist) free(artist);
 }
 
 
